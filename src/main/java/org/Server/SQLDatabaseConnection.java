@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SQLDatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/new_schema";
+    private static final String URL = "jdbc:mysql://localhost:3306/wine";
     private static final String USER = "root";
-    private static final String PASSWORD = "admin";
+    private static final String PASSWORD = "amir";
 
     public Connection connect() {
         Connection conn = null;
@@ -24,6 +24,5 @@ public class SQLDatabaseConnection {
             System.out.println("Driver not found: " + e.getMessage());
         }
         return conn;
-    }
 }
-
+}
